@@ -1,0 +1,27 @@
+Costs {
+    COST_Electricity("electr", "elektr", "energ", "prad", "prąd"), 
+    COST_Water("wod", "wód", "water"), 
+    COST_Gas("gas", "gaz"), 
+    COST_Rent("wynaj", "najem", "czynsz", "rent")
+};
+Transportation {
+    TRANS_Fuel("paliw", "benzyn", "fuel", "diesel", "olej napędowy", "olej napedowy"), 
+    TRANS_Roads("bilet", "wstęp", "drog", "dróg", "autostrad")
+};
+Cars {
+    CAR_Buy("samochód", "samochod", "pojazd"), 
+    CAR_Leasing("leasing"), 
+    CAR_Insurance("ubezpiecz", "insurance")
+};
+Services {
+    SERVICE_Food("śniada", "breakfast", "obiad", "dinner", "kolacj", "supper", "jedzen", "jedzeń", "food", "posiłek", "posiłk", "napój", "napoj", "kaw", "herba", "sok", "owoc", "warzyw", "deser", "cukier", "sól", "pieprz", "przypraw"), 
+    SERVICE_Clean("sprząta", "sprzata", "czyszcz", "czysto", "myc", "mycie", "odkurzanie", "clean"), 
+    SERVICE_Security("ochron", "nadzór", "nadzor", "dozor", "dozór", "security", "guard"), 
+    SERVICE_Others("hydrauliczn", "klimatyz")
+};
+Tools {
+    TOOL_Office("długopis", "papier", "paper", "zszyw", "kartk"), 
+    TOOL_Computers("komputer", "computer", "mysz", "mouse", "klawiatura", "keyboard", "monitor", "dysk", "disk", "ram"), 
+    TOOL_Network("serwer", "server", "switch", "patchpanel"), 
+    TOOL_Cables("kabel", "cabel", "przewód")
+};

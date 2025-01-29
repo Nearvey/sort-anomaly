@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Data</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Processed Data</h1>
+
+    <div class="table-container" id="table-container">
+        <table>
+            <thead>
+                <tr>
+                    {{#each records.[0]}}
+                        <th>{{@key}}</th>
+                    {{/each}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each records}}
+                    <tr>
+                        {{#each this}}
+                            <td>{{this}}</td>
+                        {{/each}}
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bottom-bar">
+        <a href="/" class="back-button">Go Back</a>
+        <button onclick="scrollTableTop()" class="scroll-top-button">Scroll to Top</button>
+        <a href="/export" class="export-button">Export Data</a>
+    </div>
+
+    <script>
+        function scrollTableTop() {
+            document.getElementById("table-container").scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
